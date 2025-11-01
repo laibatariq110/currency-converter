@@ -43,7 +43,7 @@ async function convertCurrency(e) {
 
     const rate = data.rates[toCurrency];
 
-    const convertedAmount = (amount * rate).toFixed(2);
+    const convertedAmount = (amount * rate).toFixed(4);
 
     resultText.textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
 }
